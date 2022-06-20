@@ -1,1 +1,5 @@
 @import "menu.css";
+body{
+    background-color: #333;;
+    color: white;
+}

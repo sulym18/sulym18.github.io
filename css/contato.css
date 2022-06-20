@@ -1,2 +1,12 @@
 @import "menu.css";
 @import "form.css";
+header{
+    color: white;
+}
+body{
+    background-color: #333;;
+    color: white;
+}
+button{
+    background-color: red;
+}
