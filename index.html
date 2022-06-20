@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./codeJS/principal.js"></script>
+    <link rel="stylesheet" href="./css/principal.css">
+    <title>MemeGenerator</title>
+</head>
+<body>
+    <header>
+        <h1>Gerador de memes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Pagina Principal</a></li>
+            <li><a href="./paginas/video.html">Vídeo</a></li>
+            <li class="submenu">
+              <a href="javascript:void(0)" class="drop">Info</a>
+              <div class="links">
+                <a href="./paginas/contato.html">Contato</a>
+                <a href="./paginas/sobre.html">Sobre</a>
+              </div>
+          </ul>
+    </nav>
+    <section>
+        <form action="#" method="post" name="formulario">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <label for="nome">Texto do meme</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="cor">Qual cor?</label>
+                    </div>
+                    <div class="col">
+                        <input type="color" name="cor" id="cor">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="borda">Texto com borda?</label>
+                    </div>
+                    <div class="col">
+                        <label for="borda">Sim</label>
+                        <input type="checkbox" name="borda" id="borda">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="imagem">Qual imagem?</label>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="img1">Imagem 1</label>
+                        <input type="radio" name="choice" id="img1" value="imagem1">
+                        <figure>
+                            <img src="./imagens/img1.jpg" id="imagem1" alt="Isso é uma pomba?" height="100">
+                            <figcaption>Isso é uma pomba?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <label for="img2">Imagem 2</label>
+                        <input type="radio" name="choice" id="img2" value="imagem2">
+                        <figure>
+                            <img src="./imagens/img2.jpg" id="imagem2" alt="Bob Esponja imitando uma galinha" height="100">
+                            <figcaption>Bob Esponja imitando uma galinha</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="img3">Imagem 3</label>
+                        <input type="radio" name="choice" id="img3" value="imagem3">
+                        <figure>
+                            <img src="./imagens/img3.jpg" id="imagem3" alt="Pikachu assustado" height="100">
+                            <figcaption>Pikachu assustado</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <label for="img4">Imagem 4</label>
+                        <input type="radio" name="choice" id="img4" value="imagem4">
+                        <figure>
+                            <img src="./imagens/img4.jpg" id="imagem4" alt="Entra no carro - Meninas Malvadas" height="100">
+                            <figcaption>Entra no carro - Meninas Malvadas</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <input type="button" value="Enviar" name="enviar" onclick = "gerarMeme(this.form)">
+                    <button type="reset" value="limpar">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section id="resultado">
+        <h2 id="h2"></h2>
+    </section>
+    <section>
+        <article>
+            <h2>
+                O que é um meme?
+            </h2>
+            <p>
+                "No contexto da internet, meme é uma mensagem quase sempre de tom jocoso ou irônico que pode ou não ser acompanhada por uma imagem ou vídeo e que é intensamente compartilhada por usuários nas mídias sociais."
+            </p>
+            <p>
+                TORRES, Ton. O fenômeno dos memes. <b>Cienc. Cult.</b>, São Paulo, v. 68, n. 3, p. 60-61, Sept. 2016.   Disponível em <a href="http://cienciaecultura.bvs.br/scielo.php?script=sci_arttext&pid=S0009-67252016000300018#:~:text=No%20contexto%20da%20internet%2C%20meme,por%20usu%C3%A1rios%20nas%20m%C3%ADdias%20sociais.">http://cienciaecultura.bvs.br/scielo.php?script=sci_arttext&pid=S0009-67252016000300018&lng=en&nrm=iso</a>. Acesso em 18 de Junho de 2022.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <address>
+            <p>
+                Feito com ❤️ por <a href="mailto:carlos.miguelcampos18@gmail.com">Carlos Miguel</a> @2022
+            </p>
+        </address>
+    </footer>
+</body>
+</html>

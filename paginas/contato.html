@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em contato conosco!</h1>
+        <p>Para reportar erros ou entrar em contato por algum outro motivo, preencha esse formulário</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Pagina Principal</a></li>
+            <li><a href="./video.html">Vídeo</a></li>
+            <li class="submenu">
+              <a href="javascript:void(0)" class="drop">Info</a>
+              <div class="links">
+                <a href="./contato.html">Contato</a>
+                <a href="./sobre.html">Sobre</a>
+              </div>
+          </ul>
+    </nav>
+    <main>
+        <form action="https://formspree.io/f/xgedbvvr" method="post">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <label for="nome">Nome:*</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="error">Descreva o erro:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="error" id="error">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" value="enviar">Enviar</button>
+                    <button type="reset" value="limpar">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <p>
+                Feito com ❤️ por <a href="mailto:carlos.miguelcampos18@gmail.com">Carlos Miguel</a> @2022
+            </p>
+        </address>
+    </footer>
+</body>
+</html>
